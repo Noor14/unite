@@ -1,0 +1,29 @@
+.sidebar{
+  border-radius: 2px;
+  box-shadow: 1px 1px 6px 1px #e4e4e4;
+  height: 100%;
+  ul{
+    li{
+    border-bottom: 1px solid #e4e4e4;
+    padding: 4px;
+    padding-left: 30px;
+    &:first-child{
+    background: #f8f9fa;
+    border-right: 1px solid #e4e4e4;
+    a{
+      font-size: 21px;
+      font-weight: bold;
+    }
+    }
+    a{
+      color: #5d5c8c;
+    }
+    &.active{
+    background: #5d5c8c;
+      a{
+        color: white
+      }
+    }
+    }
+  }
+}
