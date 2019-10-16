@@ -1,6 +1,11 @@
 header{
   box-shadow: 5px 0px 6px 1px #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
+  .navbar-brand{
+    color: #5d5c8c;
+    font-size: 25px;
+    font-weight: 500;
+  }
   .profpic{
     width: 40px;
     height: 40px;
