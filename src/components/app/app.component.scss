@@ -4,6 +4,31 @@
     box-shadow: 0px 0px 7px -2px #d6d6d6;
     border-radius: 4px;
     border: none;
+    .more{
+      display: flex;
+      justify-content: flex-end;
+      #iconmore{
+        fill: #c5c5c5;
+        width: 20px;
+        margin: 6px 0;
+      }
+    }
+    .connection{
+      svg{
+        &#iconcall{
+          fill: red;
+          width:25px;
+        }
+        &#iconchat{
+          fill: orange;
+          width:30px;
+        }
+        &#iconmessage{
+          width:30px;
+          fill: green;
+        }
+      }
+    }
     .image{
       width: 80px;
       height:80px;
