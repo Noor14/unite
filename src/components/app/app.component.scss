@@ -2,16 +2,23 @@
   height: calc(100% - 64px);
   .card{
     box-shadow: 0px 0px 7px -2px #d6d6d6;
-    border-radius: 4px;
-    border: none;
-    .more{
-      display: flex;
-      justify-content: flex-end;
-      #iconmore{
-        fill: #c5c5c5;
-        width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    .upperside{
+      svg{
         margin: 6px 0;
+        &#iconchecked{
+          fill: #5d5c8c;
+          width: 25px;
+          margin-left: 5px;
+          border-radius: 4px;
+        }
+        &#iconmore{
+          fill: #c5c5c5;
+          width: 20px;
+
+        }
       }
+
     }
     .connection{
       svg{
