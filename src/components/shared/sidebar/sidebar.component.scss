@@ -4,14 +4,23 @@
   height: 100%;
   ul{
     li{
+    display: flex;
     border-bottom: 1px solid #f3f3f3;
     padding: 4px;
     padding-left: 30px;
+    svg{
+      width: 30px;
+      fill:#c5c5c5;
+      margin-right: 20px;
+    }
     a{
       color: #5d5c8c;
     }
     &.active{
-    background: #5d5c8c;
+      svg{
+        fill:#ffffff;
+      }
+        background: #5d5c8c;
       a{
         color: white
       }
