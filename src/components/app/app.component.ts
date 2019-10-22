@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'unite';
-  public contacts:any[]= new Array(12)
 }

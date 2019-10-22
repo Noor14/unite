@@ -3,26 +3,25 @@
   box-shadow: 0px 0px 7px -2px #d6d6d6;
   height: 100%;
   ul{
-    li{
+  .nav-item{
     display: flex;
     border-bottom: 1px solid #f3f3f3;
-    padding: 4px;
-    padding-left: 30px;
-    svg{
-      width: 30px;
-      fill:#c5c5c5;
-      margin-right: 20px;
-    }
-    a{
+    .nav-link{
+      padding: 8px;
+      padding-left: 30px;
+      width: 100%;
       color: #5d5c8c;
-    }
-    &.active{
       svg{
-        fill:#ffffff;
+        width: 30px;
+        fill:#c5c5c5;
+        margin-right: 20px;
       }
+      &.active{
+        svg{
+          fill:#ffffff;
+        }
         background: #5d5c8c;
-      a{
-        color: white
+        color: #ffffff;
       }
     }
     }

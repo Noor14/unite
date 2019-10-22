@@ -5,11 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from '../shared/header/header.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { MessagesComponent } from './messages/messages.component';
+import { SettingsComponent } from './settings/settings.component';
+import { ChatsComponent } from './chats/chats.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    ContactsComponent,
+    MessagesComponent,
+    SettingsComponent,
+    ChatsComponent
   ],
   imports: [
     BrowserModule,
