@@ -1,4 +1,12 @@
 .main{
   height: calc(100% - 64px);
-
+  .pages {
+    position: relative;
+    /deep/ router-outlet ~ * {
+      position: absolute;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
 }
+

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  public contacts:any[]= new Array(12)
+  public contacts:any[]= new Array(4)
 
   constructor() { }
 
