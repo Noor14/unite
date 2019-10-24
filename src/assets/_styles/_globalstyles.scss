@@ -4,5 +4,19 @@ html{
   height: 100%;
   body{
     @extend html;
+    .pointer{
+      cursor:pointer;
+    }
+    .form-control{
+      border: none;
+      border-bottom: 1px solid #ced4da;
+      background: transparent;
+      border-radius: unset;
+      &:focus{
+        border-color: #ced4da;
+        background: transparent;
+        box-shadow: unset;
+      }
+    }
   }
 }

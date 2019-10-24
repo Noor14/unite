@@ -13,6 +13,21 @@
         box-shadow: 0px 0px 7px -2px #d6d6d6;
         border: 1px solid rgba(0, 0, 0, 0.07);
         .upperside{
+          .dropdown-toggle::after{
+            display: none;
+          }
+          .dropdown-menu{
+            left: 15px !important;
+            border: 1px solid rgba(0,0,0,.07);
+            background: #f8f9fa;
+            .dropdown-item{
+              padding-top: 8px;
+              padding-bottom: 8px;
+              &:active{
+                background: #5d5c8c;
+              }
+            }
+          }
           svg{
             margin: 6px 0;
             &#iconchecked{
@@ -64,5 +79,31 @@
           border-top-color: #f3f3f3
         }
 
+      }
+      @media (min-width:500px) and (max-width: 575.98px){
+        .navbar{
+          display: flex;
+          flex-direction: column;
+          span:first-child{
+            margin-bottom: 5px
+          }
+        }
+        .contactPerson{
+          width: 60%;
+          margin: auto;
+        }
+      }
+      @media (max-width: 499.98px){
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            span:first-child{
+              margin-bottom: 5px
+            }
+          }
+          .contactPerson{
+            width: calc(60% + 4.5em);
+            margin: auto;
+          }
       }
 }

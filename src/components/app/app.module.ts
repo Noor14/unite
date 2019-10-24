@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +26,7 @@ import { ChatsComponent } from './chats/chats.component';
     BrowserModule,
     CommonModule,
     BrowserAnimationsModule,
+    NgbModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,9 +1,9 @@
 <app-header></app-header>
 <section class="row main m-0">
-    <div class="col-md-2 p-0">
+    <div class="col-xl-2 d-none d-xl-block p-0">
         <app-sidebar></app-sidebar>
     </div>
-    <div class="col-md-10">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-10">
       <section class="container-fluid">
           <div class="pages" [@fadeAnimation]="activatedRoute(outlet)">
             <router-outlet #outlet="outlet"></router-outlet>

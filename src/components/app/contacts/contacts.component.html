@@ -2,7 +2,7 @@
                 <section class="contact">
                   <nav class="mb-3 navbar bg-light">
                     <span>
-                        <input type="text" class="form-control" placeholder="Search by name or number" size="40">
+                        <input type="text" class="form-control" placeholder="Search by name or number" size="35">
                     </span>
                      <span>
                         <svg version="1.1" id="iconchecked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -20,7 +20,7 @@
                      </span>
                   </nav>
                   <div class="row">
-                      <div class="col-md-3 mb-3" *ngFor="let obj of contacts">
+                      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-3 contactPerson" *ngFor="let obj of contacts; let i = index">
                           <div class="card">
                             <div class="upperside d-flex justify-content-between">
                               <svg version="1.1" id="iconchecked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -35,7 +35,8 @@
                              </g>
                               </svg>
 
-                              <svg version="1.1" id="iconmore" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              <!-- <div ngbDropdown placement="top-left" class="d-inline-block">
+                                <svg version="1.1"  id="iconmore" ngbDropdownToggle xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
                                <g>
                                <path d="M30,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S25.589,16,30,16z"/>
@@ -43,6 +44,27 @@
                                <path d="M30,22c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,22,30,22z"/>
                                </g>
                                </svg>
+                               <div ngbDropdownMenu aria-labelledby="iconmore">
+                                <li ngbDropdownItem>Detail</li>
+                              </div>
+                              </div> -->
+
+                              <div class="pointer" placement="left-top"ngbDropdown>
+                                <span id="detail"  ngbDropdownToggle>
+                                    <svg version="1.1" id="iconmore" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                                   <g>
+                                   <path d="M30,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S25.589,16,30,16z"/>
+                                   <path d="M30,44c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,44,30,44z"/>
+                                   <path d="M30,22c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,22,30,22z"/>
+                                   </g>
+                                   </svg>
+                                </span>
+                                <ul ngbDropdownMenu aria-labelledby="detail" class="p-0">
+                                  <li ngbDropdownItem >Detail</li>
+                                </ul>
+                              </div>
+
                             </div>
                             <div class="image">
                                 <img src="../../assets/_images/capture.PNG" class="card-img-top" alt="...">
