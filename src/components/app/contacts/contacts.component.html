@@ -5,7 +5,7 @@
                         <input type="text" class="form-control" placeholder="Search by name or number" size="35">
                     </span>
                      <span>
-                        <svg version="1.1" id="iconchecked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <!-- <svg version="1.1" id="iconcheckedAll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 60.015 60.015" style="enable-background:new 0 0 60.015 60.015;" xml:space="preserve">
                      <g>
                        <path d="M59.136,7.372c-1.133-1.133-3.109-1.133-4.242,0L27,35.265L15.344,23.609c-1.133-1.133-3.109-1.133-4.242,0
@@ -15,15 +15,20 @@
                          c1.005-1.006,2.423-1.582,3.889-1.582s2.884,0.576,3.889,1.582L27,31.73l26-26V3.507H0v53h53V21.285L30.889,43.396
                          C29.85,44.435,28.469,45.007,27,45.007z"/>
                      </g>
-                     </svg>
-                     Delete All Contacts
+                     </svg> -->
+                     <label class="checkboxIcon pointer m-0 pl-4">
+                      <span class="ml-1">Delete All Contacts</span>
+                      <input type="checkbox" class="pointer">
+                      <span class="checkmark"></span>
+                    </label>
+
                      </span>
                   </nav>
                   <div class="row">
                       <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-3 contactPerson" *ngFor="let obj of contacts; let i = index">
                           <div class="card">
                             <div class="upperside d-flex justify-content-between">
-                              <svg version="1.1" id="iconchecked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              <!-- <svg version="1.1" id="iconchecked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 60.015 60.015" style="enable-background:new 0 0 60.015 60.015;" xml:space="preserve">
                              <g>
                                <path d="M59.136,7.372c-1.133-1.133-3.109-1.133-4.242,0L27,35.265L15.344,23.609c-1.133-1.133-3.109-1.133-4.242,0
@@ -33,22 +38,11 @@
                                  c1.005-1.006,2.423-1.582,3.889-1.582s2.884,0.576,3.889,1.582L27,31.73l26-26V3.507H0v53h53V21.285L30.889,43.396
                                  C29.85,44.435,28.469,45.007,27,45.007z"/>
                              </g>
-                              </svg>
-
-                              <!-- <div ngbDropdown placement="top-left" class="d-inline-block">
-                                <svg version="1.1"  id="iconmore" ngbDropdownToggle xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                               <g>
-                               <path d="M30,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S25.589,16,30,16z"/>
-                               <path d="M30,44c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,44,30,44z"/>
-                               <path d="M30,22c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,22,30,22z"/>
-                               </g>
-                               </svg>
-                               <div ngbDropdownMenu aria-labelledby="iconmore">
-                                <li ngbDropdownItem>Detail</li>
-                              </div>
-                              </div> -->
-
+                              </svg> -->
+                              <label class="checkboxIcon pointer">
+                                <input type="checkbox" class="pointer">
+                                <span class="checkmark"></span>
+                              </label>
                               <div class="pointer" placement="left-top"ngbDropdown>
                                 <span id="detail"  ngbDropdownToggle>
                                     <svg version="1.1" id="iconmore" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

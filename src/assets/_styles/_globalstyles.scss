@@ -18,5 +18,39 @@ html{
         box-shadow: unset;
       }
     }
+    .checkboxIcon{
+      position: relative;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      input[type="checkbox"]{
+       display: none;
+        &:checked  ~ .checkmark:after{
+            display: block;
+            width: 10px;
+            height: 22px;
+            border: solid #5d5c8c;
+            border-width: 0 2.4px 2.4px 0px;
+            transform: rotate(45deg);
+            left: 9px;
+            top: -7px;
+        }
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        border-radius: 3px;
+        border: 2px solid #5d5c8c;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+      }
+    }
   }
 }

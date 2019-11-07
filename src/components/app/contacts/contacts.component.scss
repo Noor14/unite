@@ -3,11 +3,11 @@
     border-radius: 3px;
     box-shadow: 0px 0px 4px -2px #d6d6d6;
     border: 1px solid rgba(0, 0, 0, 0.07);
-    #iconchecked{
-      fill: #5d5c8c;
-      width: 25px;
-      border-radius: 4px;
-    }
+    // #iconcheckedAll{
+    //   fill: #5d5c8c;
+    //   width: 25px;
+    //   border-radius: 4px;
+    // }
   }
     .card{
         box-shadow: 0px 0px 7px -2px #d6d6d6;
@@ -30,17 +30,20 @@
           }
           svg{
             margin: 6px 0;
-            &#iconchecked{
-              fill: #5d5c8c;
-              width: 25px;
-              margin-left: 5px;
-              border-radius: 4px;
-            }
+            // &#iconchecked{
+            //   fill: #5d5c8c;
+            //   width: 25px;
+            //   margin-left: 5px;
+            //   border-radius: 4px;
+            // }
             &#iconmore{
               fill: #c5c5c5;
               width: 20px;
 
             }
+          }
+          .checkboxIcon{
+            margin: 6px 0 6px 5px;
           }
 
         }
