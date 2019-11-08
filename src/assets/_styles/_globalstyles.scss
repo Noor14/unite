@@ -12,11 +12,28 @@ html{
       border-bottom: 1px solid #ced4da;
       background: transparent;
       border-radius: unset;
+      margin-bottom: 15px;
       &:focus{
         border-color: #ced4da;
         background: transparent;
         box-shadow: unset;
       }
+    }
+    .btn{
+      &-primary{
+        background: #5d5c8c;
+        border-radius: unset;
+        border: unset;
+        &:active, &:hover, &:not(:disabled):not(.disabled):active{
+          border: unset;
+          background: #5d5c8c;
+        }
+        &:focus, &:not(:disabled):not(.disabled):active:focus{
+          box-shadow: unset;
+        }
+
+      }
+
     }
     .checkboxIcon{
       position: relative;
