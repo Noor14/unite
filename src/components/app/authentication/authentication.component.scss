@@ -1,6 +1,13 @@
-.rootContentArea{
-  background: #f3f3f34f;
+.authentication{
+  .rootContentArea{
+    background: #f3f3f34f;
+    .themebanner{
+      width: 100%;
+      height: -webkit-fill-available;
+    }
+  }
+  .rootSidebar{
+   box-shadow: 0px 0px 7px -2px #d6d6d6
+  }
 }
-.rootSidebar{
- box-shadow: 0px 0px 7px -2px #d6d6d6
-}
+
