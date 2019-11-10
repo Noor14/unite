@@ -7,7 +7,12 @@
     }
   }
   .rootSidebar{
-   box-shadow: 0px 0px 7px -2px #d6d6d6
+   box-shadow: 0px 0px 7px -2px #d6d6d6;
+    position: relative;
+    /deep/ router-outlet ~ * {
+      position: absolute;
+      padding: 0 15px;
+    }
   }
 }
 

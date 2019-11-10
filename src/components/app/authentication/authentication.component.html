@@ -2,7 +2,7 @@
     <div class="col-md-9 rootContentArea">
         <img src="../../../assets/_images/themeBanner.gif" alt="theme" class="themebanner"/>
     </div>
-    <div class="col-md-3 d-flex justify-content-center align-items-center rootSidebar">
-        <router-outlet></router-outlet>
+    <div class="col-md-3 d-flex justify-content-center align-items-center rootSidebar" [@fadeAnimation]="activatedRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
     </div>
 </section>
