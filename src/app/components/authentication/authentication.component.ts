@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { routeAnimation } from '../Constant/routeAnimation';
+import { routeAnimation } from '../../constant/routeAnimation';
 import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-authentication',
