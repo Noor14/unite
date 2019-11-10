@@ -1,3 +1,31 @@
-<p>
-  registration works!
-</p>
+<section class="registration">
+  <h5 class="text-muted mb-5 text-center" >CREATE AN ACCOUNT</h5>
+  <form>
+    <div class="form-group">
+        <input type="text" class="form-control text-center" placeholder="92xxxxxxxxxx">
+        <select class="form-control">
+          <option value="">Select Network</option>
+          <option value="Jazz">Jazz</option>
+          <option value="Telenor">Telenor</option>
+          <option value="Ufone">Ufone</option>
+          <option value="Zong">Zong</option>
+        </select>
+        <input type="email" class="form-control text-center" placeholder="Email Address">
+        <input type="password" class="form-control text-center" placeholder="Password">
+        <input type="password" class="form-control text-center" placeholder="Confirm Password">
+        <div class="termCondition mb-5 mt-5 text-center">
+            <label class="checkboxIcon pointer m-0 pl-4">
+                <span class="ml-1">Accept <a href="#">terms and conditions</a></span>
+                <input type="checkbox" class="pointer">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">CREATE AN ACCOUNT</button>
+    </div>
+  </form>
+  <div class="d-flex flex-column align-items-center">
+      <span>Already have an account?</span>
+      <a routerLink="/login">Login</a>
+    </div>
+</section>
+
