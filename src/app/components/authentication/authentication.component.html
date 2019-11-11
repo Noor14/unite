@@ -1,8 +1,8 @@
 <section class="row m-0 h-100 authentication">
-    <div class="col-md-9 rootContentArea">
+    <div class="col-md-8 co-lg-9 col-xl-9 d-none d-xl-block d-lg-block d-md-block rootContentArea">
         <img src="../../../assets/_images/themeBanner.gif" alt="theme" class="themebanner"/>
     </div>
-    <div class="col-md-3 d-flex justify-content-center align-items-center rootSidebar" [@fadeAnimation]="activatedRoute(outlet)">
+    <div class="col-md-4 co-lg-3 offset-xl-0 offset-lg-0 offset-md-0 offset-sm-2 col-sm-8 col-xl-3 d-flex justify-content-center align-items-center rootSidebar" [@fadeAnimation]="activatedRoute(outlet)">
         <router-outlet #outlet="outlet"></router-outlet>
     </div>
 </section>
