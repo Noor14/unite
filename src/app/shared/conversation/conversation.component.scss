@@ -1,0 +1,72 @@
+.coversationStruc{
+    box-shadow: 0px 0px 7px -2px #d6d6d6;
+    border: 1px solid #f3f3f3;
+    height: 500px;
+    .conversationList{
+      border-right: 1px solid #f3f3f3;
+      .list-group{
+        &-item{
+          border: unset;
+          border-bottom: 2px solid #f3f3f3;
+          .profpic{
+            img{
+              width: 40px;
+              height: 40px;
+              border-radius: 100%;
+            }
+          }
+          p{
+          font-size: 12px
+          }
+          h6{
+            color: #5d5c8c
+          }
+        }
+      }
+    }
+    .conversations{
+      header{
+      border-bottom: 1px solid #f3f3f3;
+  
+        .navbar{
+          .profile{
+            .profpic{
+              img{
+                width: 52px;
+                height: 52px;
+                border-radius: 100%;
+              }
+            }
+          }
+          .dropdown-toggle::after{
+            display: none;
+          }
+          .dropdown-menu{
+            right: 5px !important;
+            left: auto;
+            border: 1px solid rgba(0,0,0,.07);
+            background: #f8f9fa;
+            .dropdown-item{
+              padding-top: 8px;
+              padding-bottom: 8px;
+              &:active{
+                background: #e9ecef;
+                color: #000;
+              }
+            }
+          }
+          svg{
+            margin: 6px 0;
+            &#iconmore{
+              fill: #c5c5c5;
+              width: 20px;
+  
+            }
+          }
+        }
+  
+  
+      }
+    }
+  }
+  

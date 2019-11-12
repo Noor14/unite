@@ -9,12 +9,14 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { MessagesComponent } from './messages/messages.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ChatsComponent } from './chats/chats.component';
+import { ConversationComponent } from '../../shared/conversation/conversation.component';
 
 @NgModule({
   declarations: [
     UserComponent,
     HeaderComponent,
     SidebarComponent,
+    ConversationComponent,
     ContactsComponent,
     MessagesComponent,
     SettingsComponent,
