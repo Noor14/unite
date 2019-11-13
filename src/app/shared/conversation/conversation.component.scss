@@ -119,10 +119,10 @@
           .mr-3{
             p:first-child::before{
               @extend p:first-child::before;
-              right: -6px;
+              right: -8px;
               top: -2px;
               border-bottom: 10px solid #5d5c8c;
-              transform: rotate(54deg);
+              transform: rotate(60deg)
             }
           }
       }
