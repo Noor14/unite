@@ -18,7 +18,9 @@ export class ConversationComponent implements OnInit {
   ngOnInit() {
   }
   openChat(){
-    this.openConversation = true;
+    if(!this.openConversation){
+      this.openConversation = true;
+    }
   }
 
 }
