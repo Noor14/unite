@@ -39,6 +39,20 @@
                 height: 40px;
                 border-radius: 100%;
               }
+              &.online{
+                position:relative;
+                &::after{
+                  content: '';
+                  width: 8px;
+                  height: 8px;
+                  position: absolute;
+                  background: green;
+                  right: -1px;
+                  bottom: 25px;
+                  border-radius: 100%;
+                  box-shadow: 0px 0px 2px 2px #f8f9fa;
+                }
+              }
             }
             p{
             font-size: 12px
@@ -51,6 +65,24 @@
       }
 
     }
+    .openConvo{
+      .relatedIcon{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 7px -2px #d6d6d6;
+        border: 1px solid #f3f3f3;
+        svg{
+          fill:#5d5c8c;
+          &#iconMessage{
+            width: 150px;
+          }
+          &#iconChat{
+            width: 175px;
+          }
+        }
+      }
+    }
     .conversations{
       position: relative;
       header{
@@ -58,11 +90,25 @@
         .navbar{
           .profile{
             .profpic{
-              img{
-                width: 40px;
-                height: 40px;
-                border-radius: 100%;
-              }
+                img{
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 100%;
+                }
+                &.online{
+                  position:relative;
+                  &::after{
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    background: green;
+                    right: -1px;
+                    bottom: 3px;
+                    border-radius: 100%;
+                    box-shadow: 0px 0px 2px 2px #f8f9fa;
+                  }
+                 }
             }
             h5{
               color:#5d5c8c;
@@ -96,8 +142,9 @@
 
       }
       .messages{
-        overflow-y:auto;
-        max-height: 383px;
+        perfect-scrollbar{
+          max-height: 383px;
+        }
           p{
             position: relative;
             &:first-child::before{

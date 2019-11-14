@@ -8,7 +8,7 @@ html{
       cursor:pointer;
     }
     .form-control{
-      border: none;
+      border: unset;
       border-bottom: 1px solid #ced4da;
       background: transparent;
       border-radius: unset;
@@ -67,6 +67,14 @@ html{
           content: "";
           position: absolute;
           display: none;
+        }
+      }
+    }
+    perfect-scrollbar{
+      .ps__rail-y:hover{
+        width: 10px !important;
+        .ps__thumb-y{
+          width: 6px !important;
         }
       }
     }
