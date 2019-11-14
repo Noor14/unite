@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { routeAnimation } from '../../constant/routeAnimation';
+import { routeAnimation } from '../../constant/animations';
 import { RouterOutlet } from '@angular/router';
 
 @Component({

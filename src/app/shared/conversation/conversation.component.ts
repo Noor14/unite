@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { enterLeaveAnimation } from 'src/app/constant/animations';
 
 @Component({
   selector: 'app-conversation',
   templateUrl: './conversation.component.html',
-  styleUrls: ['./conversation.component.scss']
+  styleUrls: ['./conversation.component.scss'],
+   animations: [
+    enterLeaveAnimation
+    // animation triggers go here
+  ]
 })
 export class ConversationComponent implements OnInit {
 
