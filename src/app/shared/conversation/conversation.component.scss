@@ -67,14 +67,8 @@
 
     }
     .openConvo{
-      .relatedIcon{
-        width: 300px;
-        height: 300px;
-        border-radius: 100%;
-        box-shadow: 0px 0px 7px -2px #d6d6d6;
-        border: 1px solid #f3f3f3;
         svg{
-          fill:#5d5c8c;
+          fill:#eeeef3;
           &#iconMessage{
             width: 150px;
           }
@@ -82,7 +76,6 @@
             width: 175px;
           }
         }
-      }
     }
     .conversations{
       position: relative;
