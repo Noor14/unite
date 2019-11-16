@@ -15,6 +15,7 @@ export class ConversationComponent implements OnInit {
 
   public activeRoute: string = undefined;
   public openConversation: boolean = false;
+  public connectionList: any[] = new Array(8);
 
   constructor(private activatedRoute: ActivatedRoute) {
       this.activeRoute = this.activatedRoute.snapshot.url[0].path;

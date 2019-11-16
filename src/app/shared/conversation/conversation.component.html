@@ -11,7 +11,8 @@
             </header>
             <div class="connectionList">
                 <ul class="list-group">
-                    <li class="list-group-item list-group-item-action" (click)="openChat()">
+                    <perfect-scrollbar>
+                    <li class="list-group-item list-group-item-action pointer" *ngFor="let connection of connectionList" (click)="openChat()">
                       <div class="d-flex">
                         <div class="profpic online mr-3">
                           <img src="../../../assets/_images/capture.PNG" alt="pic"/>
@@ -21,35 +22,12 @@
                           <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget.</p>
                         </div>
                       </div>
-                      <small class="text-muted">3 days ago</small>
+                      <small class="text-warning">3 months ago</small>
+                      <!-- <small class="text-danger">3 years ago</small> -->
+                      <!-- <small class="text-muted">3 days ago</small> -->
                     </li>
 
-                    <li class="list-group-item list-group-item-action">
-                      <div class="d-flex">
-                        <div class="profpic online mr-3">
-                          <img src="../../../assets/_images/capture.PNG" alt="pic"/>
-                        </div>
-                        <div class="chatContent">
-                          <h6 class="mb-1">Aun Rizvi</h6>
-                          <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget.</p>
-                        </div>
-                      </div>
-                      <small class="text-warning">2 Months ago</small>
-
-                    </li>
-                    <li class="list-group-item list-group-item-action">
-                      <div class="d-flex">
-                        <div class="profpic online mr-3">
-                          <img src="../../../assets/_images/capture.PNG" alt="pic"/>
-                        </div>
-                        <div class="chatContent">
-                          <h6 class="mb-1">Aman Sultan</h6>
-                          <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget.</p>
-                        </div>
-                      </div>
-                      <small class="text-danger">2 Years ago</small>
-
-                    </li>
+                  </perfect-scrollbar>
             </ul>
           </div>
         </div>
