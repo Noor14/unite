@@ -61,6 +61,11 @@
             h6{
               color: #5d5c8c
             }
+            small{
+              position: absolute;
+              right: 1.25rem;
+              top: .75rem;
+            }
           }
         }
       }
@@ -138,7 +143,6 @@
       .messages{
         perfect-scrollbar{
           max-height: 383px;
-        }
           p{
             position: relative;
             &:first-child::before{
@@ -206,6 +210,8 @@
               }
             }
           }
+        }
+
       }
       .writingText{
         position: absolute;
