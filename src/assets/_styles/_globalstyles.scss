@@ -20,6 +20,9 @@ html{
       }
     }
     .btn{
+      &:focus, &:not(:disabled):not(.disabled):active:focus{
+        box-shadow: unset;
+      }
       &-primary{
         font-size: 16px;
         background: #5d5c8c;
@@ -29,10 +32,6 @@ html{
           border: unset;
           background: #5d5c8c;
         }
-        &:focus, &:not(:disabled):not(.disabled):active:focus{
-          box-shadow: unset;
-        }
-
       }
 
     }

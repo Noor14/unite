@@ -231,8 +231,7 @@
         border-top: 1px solid rgba(0, 0, 0, 0.07);
         textarea{
           border-radius: 25px;
-          width: 100%;
-          display: flex;
+          width:85%;
           font-size: 14px;
           text-indent: 20px;
           border-color: rgba(0, 0, 0, 0.07);
@@ -241,6 +240,14 @@
           &:focus{
             outline:unset;
           }
+        }
+        .msgSendBtn{
+          background-image: url("../../../assets/_images/icon_send.svg");
+          background-position: left;
+          background-size: 20px;
+          background-repeat: no-repeat;
+          color: #5d5c8c;
+          font-weight: 500;
         }
       }
     }
