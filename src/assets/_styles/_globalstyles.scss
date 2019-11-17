@@ -18,6 +18,19 @@ html{
         background: transparent;
         box-shadow: unset;
       }
+      &.search{
+          border-radius: 20px;
+          background: #fff;
+          border: 1px solid #ced4da;
+          background-image: url("./assets/_images/icon_search.svg");
+          background-repeat: no-repeat;
+          background-size: 20px;
+          margin-bottom: 0px;
+          background-position: 95%;
+          &:focus{
+            background: #fff;
+          }
+        }
     }
     .btn{
       &:focus, &:not(:disabled):not(.disabled):active:focus{
