@@ -7,6 +7,12 @@ html{
     .pointer{
       cursor:pointer;
     }
+    .small-modal {
+      .modal-dialog {
+        max-width: 400px!important;
+        margin: auto
+      }
+    }
     .form-control{
       border: unset;
       border-bottom: 1px solid #ced4da;

@@ -1,12 +1,13 @@
-<div class="modal-header">
-  <h4 class="modal-title">Hi there!</h4>
-  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-    <span aria-hidden="true">&times;</span>
+<div class="modal-header bg-light">
+  <h4 class="modal-title">Clear Conversation</h4>
+  <button type="button" class="close btn" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">
+      <img src="../../../assets/_images/icon_close.svg" width="16" alt="closeicon">
+    </span>
   </button>
 </div>
 <div class="modal-body">
-  <!-- <p>Hello, {{name}}!</p> -->
+  <p class="text-center pt-3 pb-3 pl-4 pr-4">Are you sure to clear this conversation?</p>
+  <button type="button" class="btn btn-danger btn-block" (click)="activeModal.close('Close click')">YES, I WANT</button>
 </div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
-</div>
+

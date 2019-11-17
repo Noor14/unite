@@ -117,7 +117,11 @@ export class ConversationComponent implements OnInit , AfterViewChecked {
   }
 
   openDialog() {
-    this.modalService.open(DeleteDialogComponent);
+    this.modalService.open(DeleteDialogComponent, {
+      centered: true,
+      size: "lg",
+      windowClass: "small-modal"
+    });
   }
 
 
