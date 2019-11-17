@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewChecked, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { enterLeaveAnimation } from 'src/app/constant/animations';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
 
 @Component({
   selector: 'app-conversation',
@@ -108,11 +110,17 @@ export class ConversationComponent implements OnInit , AfterViewChecked {
     },
   ];
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute, private modalService: NgbModal) {
       this.activeRoute = this.activatedRoute.snapshot.url[0].path;
    }
   ngOnInit() {
   }
+
+  openDialog() {
+    this.modalService.open(DeleteDialogComponent);
+  }
+
+
   openChat() {
     if (!this.openConversation) {
       this.openConversation = true;
