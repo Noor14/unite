@@ -14,15 +14,15 @@
                     <perfect-scrollbar>
                     <li class="list-group-item list-group-item-action pointer" *ngFor="let connection of connectionList" (click)="openChat()">
                       <div class="d-flex">
-                        <div class="profpic online mr-3">
-                          <img src="../../../assets/_images/capture.PNG" alt="pic"/>
+                        <div class="profpic mr-3" [ngClass]="{'online': connection.onlineStatus}">
+                          <img [src]="connection.profileImgUrl" alt="pic"/>
                         </div>
                         <div class="chatContent">
-                          <h6 class="mb-1">Noor Ali</h6>
-                          <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget.</p>
+                          <h6 class="mb-1">{{connection.profileName}}</h6>
+                          <p class="mb-0">{{connection.lastMsg}}</p>
                         </div>
                       </div>
-                      <small class="text-warning">3 months ago</small>
+                      <small class="text-muted">{{connection.lastMsgTimeStamp}}</small>
                       <!-- <small class="text-danger">3 years ago</small> -->
                       <!-- <small class="text-muted">3 days ago</small> -->
                     </li>
