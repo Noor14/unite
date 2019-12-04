@@ -6,17 +6,46 @@ header{
     font-size: 25px;
     font-weight: 500;
   }
-  .profpic{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: 2px solid #f5f5f5;
-    box-shadow: 0px 0px 1px 3px #e4e4e4;
-    img{
-      width: 100%;
-      height: 100%;
+  .userMenu{
+    .profpic{
+      width: 40px;
+      height: 40px;
       border-radius: 100%;
+      border: 2px solid #f5f5f5;
+      box-shadow: 0px 0px 1px 3px #e4e4e4;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+    .downArrow{
+      width: 15px;
+      transform: rotate(90deg);
+    }
+    .dropdown-toggle::after{
+      display: none;
+    }
+    .dropdown-menu{
+      right: 0px !important;
+      left: auto;
+      border: unset;
+      box-shadow: 0px 0px 7px -2px #d6d6d6;
+      .dropdown-item{
+        padding: 0.5rem 5rem 0.5rem 1.4rem !important;
+        &:active{
+          background: #e9ecef;
+          color: #000;
+        }
+        &:last-child{
+          .logoutIcon{
+            width:20px
+          }
+          color: #ba323c
+        }
+      }
     }
   }
+
 
 }

@@ -2,9 +2,20 @@
     <nav class="navbar bg-light">
       <div class="container-fluid">
                 <a class="navbar-brand" href="#">Unite.</a>
-                <div class="profpic">
-                  <img src="../../../assets/_images/capture.PNG" alt="pic"/>
-                </div>
+                <div ngbDropdown placement="bottom-right" class="userMenu pointer">
+                  <div id="menu" ngbDropdownToggle class="d-flex">
+                    <div class="profpic">
+                      <img src="../../../assets/_images/capture.PNG" alt="pic"/>
+                    </div>
+                    <img src="../../../assets/_images/icon_arrow_right.svg" alt="icon_arrow" class="downArrow ml-2">
+                  </div>
+                  <ul ngbDropdownMenu aria-labelledby="menu" class="mt-2">
+                    <li ngbDropdownItem>Action - 1</li>
+                    <li ngbDropdownItem>Another Action</li>
+                    <div class="dropdown-divider"></div>
+                    <li ngbDropdownItem (click)="logout()"> <img class="mr-2 logoutIcon" src="../../../assets/_images/icon_logout.svg" alt="icon" />Logout</li>
+                  </ul>
+              </div>
         </div>
     </nav>
   </header>
