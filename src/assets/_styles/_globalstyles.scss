@@ -89,11 +89,15 @@ html{
       }
     }
     perfect-scrollbar{
-      .ps__rail-y:hover{
-        width: 10px !important;
-        .ps__thumb-y{
-          width: 6px !important;
+      .ps__rail-y{
+        &:hover, &:focus{
+          width: 10px !important;
+          background: unset !important;
+          .ps__thumb-y{
+            width: 6px !important;
+          }
         }
+
       }
     }
   }
