@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewChecked, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { enterLeaveAnimation } from 'src/app/constant/animations';
+import { slideInOut } from 'src/app/constant/animations';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
 
@@ -9,14 +9,14 @@ import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component'
   templateUrl: './conversation.component.html',
   styleUrls: ['./conversation.component.scss'],
    animations: [
-    enterLeaveAnimation
-    // animation triggers go here
+    slideInOut
   ]
 })
 export class ConversationComponent implements OnInit , AfterViewChecked {
   @ViewChild('scroll') private scrollContainer: any;
   public activeRoute: string = undefined;
   public openConversation: boolean = false;
+  public personInfo: boolean = false;
   public connectionList: any[] = [
     {
       id: 123,
@@ -119,11 +119,13 @@ export class ConversationComponent implements OnInit , AfterViewChecked {
   openDialog() {
     this.modalService.open(DeleteDialogComponent, {
       centered: true,
-      size: "lg",
-      windowClass: "small-modal"
+      size: 'lg',
+      windowClass: 'small-modal'
     });
   }
-
+  openContactInfo() {
+    this.personInfo = true;
+  }
 
   openChat() {
     if (!this.openConversation) {
