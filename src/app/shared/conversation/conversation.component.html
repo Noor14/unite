@@ -17,6 +17,7 @@
                       <div class="d-flex">
                         <div class="profpic mr-3" [ngClass]="{'online': connection.onlineStatus}">
                           <img [src]="connection.profileImgUrl" alt="pic"/>
+                           <span *ngIf="connection.unreadMsg" class="unreadMsgBadge">{{connection.unreadMsg}}</span>
                         </div>
                         <div class="chatContent">
                           <h6 class="mb-1">{{connection.profileName}}</h6>

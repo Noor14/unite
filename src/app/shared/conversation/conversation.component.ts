@@ -26,7 +26,7 @@ export class ConversationComponent implements OnInit , AfterViewChecked {
       profileImgUrl:"../../../assets/_images/capture.PNG",
       conversationId: 234567,
       onlineStatus: false,
-      unreadMsg: 1,
+      unreadMsg: 0,
     },
     {
       id: 1234,
@@ -66,7 +66,7 @@ export class ConversationComponent implements OnInit , AfterViewChecked {
       profileImgUrl:"../../../assets/_images/capture.PNG",
       conversationId: 234567,
       onlineStatus: false,
-      unreadMsg: 6,
+      unreadMsg: 0,
     },
     {
       id: 12387,
@@ -96,7 +96,7 @@ export class ConversationComponent implements OnInit , AfterViewChecked {
       profileImgUrl:"../../../assets/_images/capture.PNG",
       conversationId: 234567,
       onlineStatus: true,
-      unreadMsg: 4,
+      unreadMsg: 0,
     },
     {
       id: 123756,

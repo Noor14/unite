@@ -41,6 +41,7 @@
               .profpic{
                 width: 40px;
                 height: 40px;
+                position: relative;
                 img{
                   @extend .profpic;
                   border-radius: 100%;
