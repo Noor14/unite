@@ -15,6 +15,8 @@ import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { DeleteDialogComponent } from '../../shared/delete-dialog/delete-dialog.component';
 import { InfoComponent } from '../../shared/info/info.component';
+import { RemindersComponent } from './reminders/reminders.component';
+import { SchedulersComponent } from './schedulers/schedulers.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   // suppressScrollX: true
@@ -30,7 +32,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     SettingsComponent,
     ChatsComponent,
     DeleteDialogComponent,
-    InfoComponent
+    InfoComponent,
+    RemindersComponent,
+    SchedulersComponent
   ],
   imports: [
     CommonModule,
