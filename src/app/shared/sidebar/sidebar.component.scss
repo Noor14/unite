@@ -1,27 +1,33 @@
 .sidebar{
   // box-shadow: 0px 2px 7px -2px #d6d6d6;
-  // height: 100%;
-  margin-top: 30px;
+  height: 100%;
+  border-right: 1px solid #e7e7e8;
+  // margin-top: 30px;
   ul{
   .nav-item{
-    display: flex;
+    font-size: 13px;
     // border-bottom: 1px solid #f3f3f3;
     .nav-link{
-      padding: 8px;
-      padding-left: 15px;
+      padding: 12px 8px;
+      // padding-left: 15px;
       width: 100%;
       color: #5d5c8c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       svg{
         fill:#c5c5c5;
-        margin-right: 20px;
+        // margin-right: 20px;
       }
       &.active{
         svg{
-          fill:#ffffff;
+          fill:#5d5c8c;
         }
-        background: #5d5c8c;
-        color: #ffffff;
-        border-radius: 3px;
+        // background: #5d5c8c;
+        color: #5d5c8c;
+        font-weight: 500;
+
+        // border-radius: 3px;
       }
     }
     }
