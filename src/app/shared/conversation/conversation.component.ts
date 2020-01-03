@@ -14,7 +14,7 @@ import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component'
 })
 export class ConversationComponent implements OnInit , AfterViewChecked {
   @ViewChild('scroll') private scrollContainer: any;
-  public activeRoute: string = undefined;
+  // public activeRoute: string = undefined;
   public openConversation: boolean = false;
   public personInfo: boolean = false;
   public connectionList: any[] = [
@@ -111,7 +111,7 @@ export class ConversationComponent implements OnInit , AfterViewChecked {
   ];
 
   constructor(private activatedRoute: ActivatedRoute, private modalService: NgbModal) {
-      this.activeRoute = this.activatedRoute.snapshot.url[0].path;
+      // this.activeRoute = this.activatedRoute.snapshot.url[0].path;
    }
   ngOnInit() {
   }
