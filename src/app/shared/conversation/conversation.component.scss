@@ -1,7 +1,7 @@
 .coversationStruc{
     // box-shadow: 0px 0px 7px -2px #d6d6d6;
     border: 1px solid #f3f3f3;
-    height: 500px;
+    height: 560px;
     .overlay{
       position: absolute;
       width: 100%;
@@ -31,7 +31,7 @@
       .connectionList{
         .list-group{
           perfect-scrollbar{
-            max-height: 405px;
+            max-height: 448px;
             .list-group-item{
               border: unset;
               border-bottom: 2px solid #f3f3f3;
@@ -149,7 +149,7 @@
       }
       .messages{
         perfect-scrollbar{
-          max-height: 383px;
+          max-height: 440px;
           p{
             position: relative;
             &:first-child::before{
