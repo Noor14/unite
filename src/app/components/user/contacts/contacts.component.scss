@@ -3,7 +3,7 @@
     border-right:1px solid #f3f3f3;
   .list-group{
     perfect-scrollbar{
-      max-height: 507px;
+      max-height: calc(100vh - 118px);
       .list-group-item{
         border: unset;
         border-bottom: 2px solid #f3f3f3;
@@ -44,7 +44,7 @@
 }
 .contactInfo{
   perfect-scrollbar{
-    max-height: 560px;
+    max-height: calc(100vh - 64px);
   .profpic{
     width: 110px;
     height: 110px;
