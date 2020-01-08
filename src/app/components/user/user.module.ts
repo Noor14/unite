@@ -17,6 +17,7 @@ import { DeleteDialogComponent } from '../../shared/delete-dialog/delete-dialog.
 import { InfoComponent } from '../../shared/info/info.component';
 import { RemindersComponent } from './reminders/reminders.component';
 import { SchedulersComponent } from './schedulers/schedulers.component';
+import { CallsComponent } from './calls/calls.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   // suppressScrollX: true
@@ -34,7 +35,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     DeleteDialogComponent,
     InfoComponent,
     RemindersComponent,
-    SchedulersComponent
+    SchedulersComponent,
+    CallsComponent
   ],
   imports: [
     CommonModule,

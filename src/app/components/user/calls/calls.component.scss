@@ -1,10 +1,13 @@
-.contact{
-  .contactsList{
+.calls{
+  .callList{
     border-right:1px solid #f3f3f3;
   .list-group{
     perfect-scrollbar{
-      max-height: 507px;
+      max-height: 560px;
       .list-group-item{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
         border: unset;
         border-bottom: 2px solid #f3f3f3;
         padding-top:1.2em;
@@ -12,19 +15,7 @@
         &:hover{
           z-index: 0;
         }
-        .contactSpellPortion{
-          position: absolute;
-          right: 0;
-          width: 70px;
-          height: 30px;
-          background: #5d5c8c;
-          text-align: center;
-          color: #fff;
-          top: 2px;
-          border-radius: 6px 0 0 6px;
-          font-weight: 600;
-          box-shadow: 2px 2px 4px 0px #5d5c8c42;
-        }
+
         .profpic{
           width: 40px;
           height: 40px;
@@ -34,6 +25,7 @@
             border-radius: 100%;
           }
         }
+
         h6{
           color: #5d5c8c
         }
@@ -42,7 +34,7 @@
     }
   }
 }
-.contactInfo{
+.callLog{
   perfect-scrollbar{
     max-height: 560px;
   .profpic{
@@ -69,33 +61,18 @@
     padding: 6px 25px;
   }
 
-  .personalInformation{
-    .taging{
-      display: inline-block;
-      padding: 5px 15px;
-      height: 35px;
-      background: #5d5c8c;
-      text-align: center;
-      color: #fff;
-      border-radius: 0  5px 5px 0px;
-      font-weight: 600;
-      box-shadow: 2px 2px 4px 0px #5d5c8c42;
-    }
+  .logs{
+
     .list-group{
       &-item{
-        &:first-child{
-          border-top-left-radius: unset;
-          border-top-right-radius: unset;
-          border-top: unset;
-        }
         display: flex;
         justify-content: space-between;
-        border-bottom: unset;
-        border-left: unset;
-        border-right: unset;
-        span:first-child{
-          font-weight: 500;
-        }
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-radius: 5px;
+        margin-bottom: .75em;
+        align-items: center;
+
       }
     }
   }
