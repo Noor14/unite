@@ -6,7 +6,10 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-messages',
   templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.scss']
+  styleUrls: ['./messages.component.scss'],
+  animations: [
+    slideInOut
+  ]
 })
 export class MessagesComponent implements OnInit, AfterViewChecked {
   @ViewChild('scroll') private scrollContainer: any;
