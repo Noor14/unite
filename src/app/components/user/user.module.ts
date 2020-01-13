@@ -8,8 +8,6 @@ import { SidebarComponent } from '../../shared/sidebar/sidebar.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { MessagesComponent } from './messages/messages.component';
 import { SettingsComponent } from './settings/settings.component';
-import { ChatsComponent } from './chats/chats.component';
-import { ConversationComponent } from '../../shared/conversation/conversation.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
@@ -27,11 +25,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     UserComponent,
     HeaderComponent,
     SidebarComponent,
-    ConversationComponent,
     ContactsComponent,
     MessagesComponent,
     SettingsComponent,
-    ChatsComponent,
     DeleteDialogComponent,
     InfoComponent,
     RemindersComponent,

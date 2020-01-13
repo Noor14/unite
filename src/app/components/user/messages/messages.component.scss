@@ -1,0 +1,251 @@
+.coversationStruc{
+    // box-shadow: 0px 0px 7px -2px #d6d6d6;
+    border: 1px solid #f3f3f3;
+    height: calc(100vh - 64px);
+    .overlay{
+      position: absolute;
+      top: 1px;
+      left: -1px;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+    .conversationList{
+      border-right: 1px solid #f3f3f3;
+      header{
+        .subnav{
+          border-top: 1px solid #f3f3f3;
+          button{
+            .iconAdd{
+              width:15px;
+              vertical-align: baseline;
+            }
+            color: #5d5c8c;
+            font-weight: 500;
+          }
+        }
+      }
+      .connectionList{
+        .list-group{
+          perfect-scrollbar{
+            max-height: calc(100vh - 174px);
+            .list-group-item{
+              border: unset;
+              border-bottom: 2px solid #f3f3f3;
+              &:hover{
+                z-index: 0;
+              }
+              .profpic{
+                width: 40px;
+                height: 40px;
+                position: relative;
+                img{
+                  @extend .profpic;
+                  border-radius: 100%;
+                }
+                &.online{
+                  position:relative;
+                  &::after{
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    background: green;
+                    right: -1px;
+                    bottom: 4px;
+                    border-radius: 100%;
+                    box-shadow: 0px 0px 2px 2px #f8f9fa;
+                  }
+                }
+              }
+              p{
+              font-size: 12px
+              }
+              h6{
+                color: #5d5c8c
+              }
+              small{
+                position: absolute;
+                right: 1.25rem;
+                top: .75rem;
+              }
+            }
+          }
+        }
+      }
+
+    }
+    .openConvo{
+        svg{
+          fill:#eeeef3;
+          &#iconMessage{
+            width: 150px;
+          }
+          &#iconChat{
+            width: 175px;
+          }
+        }
+    }
+    .conversations{
+      position: relative;
+      header{
+      border-bottom: 1px solid #f3f3f3;
+        .navbar{
+          .profile{
+            .profpic{
+                img{
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 100%;
+                }
+                &.online{
+                  position:relative;
+                  &::after{
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    background: green;
+                    right: -1px;
+                    bottom: 3px;
+                    border-radius: 100%;
+                    box-shadow: 0px 0px 2px 2px #f8f9fa;
+                  }
+                }
+            }
+            h5{
+              color:#5d5c8c;
+            }
+          }
+          .dropdown-toggle::after{
+            display: none;
+          }
+          .dropdown-menu{
+            right: 5px !important;
+            left: auto;
+            border: 1px solid rgba(0,0,0,.07);
+            background: #f8f9fa;
+            .dropdown-item{
+              padding-top: 8px;
+              padding-bottom: 8px;
+              &:active{
+                background: #e9ecef;
+                color: #000;
+              }
+            }
+          }
+          svg{
+            margin: 6px 0;
+            &#iconmore{
+              fill: #c5c5c5;
+              width: 20px;
+            }
+          }
+        }
+
+      }
+      .messages{
+        perfect-scrollbar{
+          max-height: calc(100vh - 179px);
+          p{
+            position: relative;
+            &:first-child::before{
+              content: '';
+              position: absolute;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+            }
+          }
+          .ml-3{
+            float: left;
+            clear: right;
+            p{
+              position: relative;
+              background: #edeff1;
+              color: black;
+              width: max-content;
+              max-width: 350px;
+              margin: 0;
+              margin-bottom: 5px;
+              border-radius: 4px;
+              padding: 8px 60px 8px 12px;
+              font-size: 14px;
+              span{
+                position: absolute;
+                bottom: 1px;
+                right: 4px;
+                font-size: 12px;
+                color: #b1acac;
+              }
+              &:first-child::before{
+                @extend p:first-child::before;
+                left: -6px;
+                top: -2px;
+                border-bottom: 10px solid #edeff1;
+                transform: rotate(54deg);
+              }
+            }
+          }
+          .mr-3{
+            float: right;
+            clear: left;
+            p{
+              position: relative;
+              width: max-content;
+              max-width: 350px;
+              margin: 0;
+              margin-bottom: 5px;
+              background: #5d5c8c;
+              color: white;
+              border-radius: 4px;
+              padding: 8px 60px 8px 12px;
+              font-size: 14px;
+              span{
+                position: absolute;
+                bottom: 1px;
+                right: 4px;
+                font-size: 12px;
+                color: #ffffff;
+              }
+              &:first-child::before{
+                @extend p:first-child::before;
+                right: -8px;
+                top: -2px;
+                border-bottom: 10px solid #5d5c8c;
+                transform: rotate(63deg)
+              }
+            }
+          }
+        }
+
+      }
+      .writingText{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 5px 15px;
+        border-top: 1px solid rgba(0, 0, 0, 0.07);
+        textarea{
+          border-radius: 25px;
+          width:85%;
+          font-size: 14px;
+          text-indent: 20px;
+          border-color: rgba(0, 0, 0, 0.07);
+          resize: none;
+          box-shadow: 0px 0px 0px 1px #f3f3f3;
+          &:focus{
+            outline:unset;
+          }
+        }
+        .msgSendBtn{
+          background-image: url("../../../../assets/_images/icon_send.svg");
+          background-position: left;
+          background-size: 20px;
+          background-repeat: no-repeat;
+          color: #5d5c8c;
+          font-weight: 500;
+        }
+      }
+    }
+  }

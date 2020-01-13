@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { ConversationComponent } from './conversation/conversation.component';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
@@ -13,7 +12,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   // suppressScrollX: true
 };
 @NgModule({
-  declarations: [HeaderComponent, SidebarComponent, ConversationComponent, DeleteDialogComponent, InfoComponent],
+  declarations: [HeaderComponent, SidebarComponent, DeleteDialogComponent, InfoComponent],
   imports: [
     CommonModule,
     PerfectScrollbarModule
