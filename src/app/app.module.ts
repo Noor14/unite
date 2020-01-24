@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     CommonModule,
-    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
