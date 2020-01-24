@@ -8,8 +8,26 @@ header{
   }
   .btn{
     color: #5d5c8c;
+    @media screen and (max-width:650px){
+        span{
+          display: none;
+        }
+    }
+    &.logout{
+      color: #ba323c;
+      position: relative;
+      &::before{
+        width: 2px;
+        height: 100%;
+        background: #d6d6d6;
+        position: absolute;
+        left: 0;
+        content: "";
+        top: 0;
+      }
+      
+    }
   }
-  .userMenu{
     .profpic{
       width: 40px;
       height: 40px;
@@ -22,33 +40,7 @@ header{
         border-radius: 100%;
       }
     }
-    .downArrow{
-      width: 15px;
-      transform: rotate(90deg);
-    }
-    .dropdown-toggle::after{
-      display: none;
-    }
-    .dropdown-menu{
-      right: 0px !important;
-      left: auto;
-      border: unset;
-      box-shadow: 0px 0px 7px -2px #d6d6d6;
-      .dropdown-item{
-        padding: 0.5rem 5rem 0.5rem 1.4rem !important;
-        &:active{
-          background: #e9ecef;
-          color: #000;
-        }
-        &:last-child{
-          .logoutIcon{
-            width:20px
-          }
-          color: #ba323c
-        }
-      }
-    }
-  }
+
 
 
 }
