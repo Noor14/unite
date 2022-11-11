@@ -3,7 +3,7 @@
     border-right:1px solid #f3f3f3;
   .list-group{
     perfect-scrollbar{
-      max-height: calc(100vh - 64px);;
+      max-height: calc(100vh - 64.5px);;
       .list-group-item{
         display:flex;
         justify-content:space-between;
@@ -36,7 +36,7 @@
 }
 .callLog{
   perfect-scrollbar{
-    max-height: calc(100vh - 64px);
+    max-height: calc(100vh - 64.5px);
   .profpic{
     width: 110px;
     height: 110px;
