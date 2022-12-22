@@ -1,23 +1,15 @@
 <header>
     <nav class="navbar bg-light">
       <div class="container-fluid">
-                <a class="navbar-brand" href="#">Unite.</a>
+                <a class="navbar-brand" href="#">Award Clicks</a>
 
-                <div class="d-flex align-items-center">
-                  <button class="btn mr-1"><img src="../../../assets/_images/icon_invite.svg" alt="addicon" width="23"><span> Invite User</span></button>
-                  <button class="btn mr-1"><img src="../../../assets/_images/icon_collaborator.svg" alt="addicon" width="20" class="mr-1"><span> Add collaborator</span></button>
-                    <div class="d-flex">
-                      <div class="profpic mr-3">
-                        <img src="../../../assets/_images/capture.PNG" alt="pic"/>
-                      </div>
-                        <button class="btn logout" (click)="logout()"> <img class="mr-2 logoutIcon" width="20px"
-                          src="../../../assets/_images/icon_logout.svg" alt="icon" /><span>Logout</span>
-                        </button>
-
-                    </div>
-                  
+                <div>
+                    <a class="mx-2" routerLink="/user/products">Products</a>
+                    <a class="mx-2" routerLink="/user/advertisers">Advertisers</a>
+                    <button class="btn logout" (click)="logout()"> <img class="mr-2 logoutIcon" width="20px"
+                      src="../../../assets/_images/icon_logout.svg" alt="icon" /><span>Logout</span>
+                    </button>
                 </div>
-
         </div>
     </nav>
   </header>

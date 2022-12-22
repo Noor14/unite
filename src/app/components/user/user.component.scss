@@ -1,5 +1,5 @@
 .main{
-  height: calc(100% - 64px);
+  height: calc(100% - 64.5px);
   .pages {
     position: relative;
     /deep/ router-outlet ~ * {

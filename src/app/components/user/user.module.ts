@@ -16,6 +16,9 @@ import { InfoComponent } from '../../shared/info/info.component';
 import { RemindersComponent } from './reminders/reminders.component';
 import { SchedulersComponent } from './schedulers/schedulers.component';
 import { CallsComponent } from './calls/calls.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductsComponent } from './products/products.component';
+import { AdvertiserComponent } from './advertiser/advertiser.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   // suppressScrollX: true
@@ -32,13 +35,17 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     InfoComponent,
     RemindersComponent,
     SchedulersComponent,
-    CallsComponent
+    CallsComponent,
+    DashboardComponent,
+    ProductsComponent,
+    AdvertiserComponent
   ],
   imports: [
     CommonModule,
     NgbModule,
     UserRoutingModule,
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+ 
   ],
   entryComponents: [
     DeleteDialogComponent
