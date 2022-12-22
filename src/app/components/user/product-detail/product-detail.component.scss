@@ -1,0 +1,15 @@
+.productDetail{
+    .row{
+        & > div{
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            label{
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 13px;    
+            }
+        }
+    }
+
+}

@@ -1,4 +1,13 @@
 .products{
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .addIcon{
+        width: 12px;
+        vertical-align: initial;
+    }
     .pic{
         width: 200px;
         height: 200px;

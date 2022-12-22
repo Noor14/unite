@@ -10,6 +10,7 @@ import { CallsComponent } from './calls/calls.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsComponent } from './products/products.component';
 import { AdvertiserComponent } from './advertiser/advertiser.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 const routes: Routes = [
   {
     path: '',
@@ -19,6 +20,7 @@ const routes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'advertisers', component: AdvertiserComponent },
     { path: 'products', component: ProductsComponent },
+    { path: 'product-detail/:id', component: ProductDetailComponent },
     { path: 'contacts', component: ContactsComponent },
     { path: 'messages', component: MessagesComponent },
     { path: 'calls', component: CallsComponent },

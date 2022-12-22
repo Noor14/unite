@@ -1,5 +1,11 @@
 <section class="products">
-  <h6 class="text-uppercase font-weight-bold text-secondary my-3">All Products</h6>
+  <h6 class="d-flex justify-content-between font-weight-bold text-secondary my-3">
+    <span>All Products</span>
+    <button class="btn text-primary">
+      <img class="addIcon" src="./assets/_images/icon_add.svg" alt="add">
+      Add Product
+    </button>
+  </h6>
 
   <div class="row">
     <div class="col-3 mb-3 mb-3">
@@ -14,7 +20,7 @@
             <small class="text-danger mr-2 font-weight-bold">PRICE $946.00</small>
             <small class="text-muted"><del>$1,173.00</del></small>
           </p>
-          <a href="#" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
+          <a [routerLink]="['/user/product-detail', 1775836]" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
         </div>
       </div>
     </div>
@@ -30,7 +36,7 @@
             <small class="text-danger mr-2 font-weight-bold">PRICE $1,200.00</small>
             <small class="text-muted"><del>$1,900.00</del></small>
           </p>
-          <a href="#" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
+          <a [routerLink]="['/user/product-detail', 1775838]" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
         </div>
       </div>
     </div>
@@ -46,7 +52,7 @@
             <small class="text-danger mr-2 font-weight-bold">PRICE $510.00</small>
             <small class="text-muted"><del>$800.00</del></small>
           </p>
-          <a href="#" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
+          <a [routerLink]="['/user/product-detail', 1775832]" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
         </div>
       </div>
     </div>
@@ -62,7 +68,7 @@
             <small class="text-danger mr-2 font-weight-bold">PRICE $173.00</small>
             <small class="text-muted"><del>$283.00</del></small>
           </p>
-          <a href="#" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
+          <a [routerLink]="['/user/product-detail', 1775839]" class="text-primary text-uppercase small font-weight-bold">Go to Detail</a>
         </div>
       </div>
     </div>

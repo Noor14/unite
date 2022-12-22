@@ -19,6 +19,8 @@ import { CallsComponent } from './calls/calls.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsComponent } from './products/products.component';
 import { AdvertiserComponent } from './advertiser/advertiser.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   // suppressScrollX: true
@@ -38,7 +40,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     CallsComponent,
     DashboardComponent,
     ProductsComponent,
-    AdvertiserComponent
+    AdvertiserComponent,
+    AddProductComponent,
+    ProductDetailComponent
   ],
   imports: [
     CommonModule,
